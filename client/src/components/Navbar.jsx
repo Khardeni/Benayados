@@ -1,17 +1,22 @@
 import { useState, useEffect } from 'react'
-
-const links = [
-  { label: 'Notre Histoire', href: '#histoire' },
-  { label: 'Notre Terre', href: '#terre' },
-  { label: 'Productions', href: '#productions' },
-  { label: 'Vision', href: '#vision' },
-  { label: 'Contact', href: '#contact' },
-]
+import { useTranslation } from 'react-i18next'
+import LanguageSwitcher from './LanguageSwitcher'
 
 export default function Navbar() {
+  const { t, i18n } = useTranslation()
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
   const [active, setActive] = useState('')
+
+  const isRtl = i18n.language?.startsWith('ar')
+
+  const links = [
+    { label: t('nav.histoire'), href: '#histoire' },
+    { label: t('nav.terre'), href: '#terre' },
+    { label: t('nav.productions'), href: '#productions' },
+    { label: t('nav.vision'), href: '#vision' },
+    { label: t('nav.contact'), href: '#contact' },
+  ]
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 60)
@@ -31,7 +36,7 @@ export default function Navbar() {
     )
     sections.forEach(s => s && observer.observe(s))
     return () => observer.disconnect()
-  }, [])
+  }, [i18n.language])
 
   const scrollTo = (e, href) => {
     e.preventDefault()
@@ -40,9 +45,12 @@ export default function Navbar() {
   }
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-      scrolled ? 'bg-cream/95 backdrop-blur-md shadow-sm border-b border-earth-100' : 'bg-transparent'
-    }`}>
+    <header
+      dir={isRtl ? 'rtl' : 'ltr'}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        scrolled ? 'bg-cream/95 backdrop-blur-md shadow-sm border-b border-earth-100' : 'bg-transparent'
+      }`}
+    >
       <nav className="max-w-7xl mx-auto px-6 lg:px-12 h-16 md:h-20 flex items-center justify-between">
         {/* Logo */}
         <a
@@ -58,7 +66,7 @@ export default function Navbar() {
           <span className={`font-body text-[9px] tracking-[0.3em] uppercase transition-colors duration-300 ${
             scrolled ? 'text-olive-600' : 'text-cream/70'
           }`}>
-            Agriculture · Tunisie
+            {t('footer.tagline')}
           </span>
         </a>
 
@@ -79,29 +87,35 @@ export default function Navbar() {
           ))}
         </ul>
 
-        {/* CTA */}
-        <a
-          href="#contact"
-          onClick={e => scrollTo(e, '#contact')}
-          className={`hidden md:inline-flex items-center gap-2 font-body text-sm tracking-wider px-5 py-2.5 border transition-all duration-300 ${
-            scrolled
-              ? 'border-olive-600 text-olive-700 hover:bg-olive-600 hover:text-cream'
-              : 'border-cream/60 text-cream hover:bg-cream/10'
-          }`}
-        >
-          Nous contacter
-        </a>
+        {/* Right side: Language switcher + CTA */}
+        <div className="hidden md:flex items-center gap-4">
+          <LanguageSwitcher scrolled={scrolled} />
+          <a
+            href="#contact"
+            onClick={e => scrollTo(e, '#contact')}
+            className={`inline-flex items-center gap-2 font-body text-sm tracking-wider px-5 py-2.5 border transition-all duration-300 ${
+              scrolled
+                ? 'border-olive-600 text-olive-700 hover:bg-olive-600 hover:text-cream'
+                : 'border-cream/60 text-cream hover:bg-cream/10'
+            }`}
+          >
+            {t('nav.cta')}
+          </a>
+        </div>
 
         {/* Mobile hamburger */}
-        <button
-          onClick={() => setOpen(!open)}
-          className={`md:hidden flex flex-col gap-1.5 p-2 ${scrolled ? 'text-earth-700' : 'text-cream'}`}
-          aria-label="Menu"
-        >
-          <span className={`block w-6 h-0.5 bg-current transition-transform duration-300 ${open ? 'translate-y-2 rotate-45' : ''}`} />
-          <span className={`block w-6 h-0.5 bg-current transition-opacity duration-300 ${open ? 'opacity-0' : ''}`} />
-          <span className={`block w-6 h-0.5 bg-current transition-transform duration-300 ${open ? '-translate-y-2 -rotate-45' : ''}`} />
-        </button>
+        <div className="md:hidden flex items-center gap-3">
+          <LanguageSwitcher scrolled={scrolled} />
+          <button
+            onClick={() => setOpen(!open)}
+            className={`flex flex-col gap-1.5 p-2 ${scrolled ? 'text-earth-700' : 'text-cream'}`}
+            aria-label="Menu"
+          >
+            <span className={`block w-6 h-0.5 bg-current transition-transform duration-300 ${open ? 'translate-y-2 rotate-45' : ''}`} />
+            <span className={`block w-6 h-0.5 bg-current transition-opacity duration-300 ${open ? 'opacity-0' : ''}`} />
+            <span className={`block w-6 h-0.5 bg-current transition-transform duration-300 ${open ? '-translate-y-2 -rotate-45' : ''}`} />
+          </button>
+        </div>
       </nav>
 
       {/* Mobile menu */}

@@ -1,4 +1,8 @@
+import { useTranslation } from 'react-i18next'
+
 export default function Hero() {
+  const { t } = useTranslation()
+
   const scrollTo = (href) => {
     document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' })
   }
@@ -13,7 +17,7 @@ export default function Hero() {
         {/* Ornament */}
         <div className="flex items-center justify-center gap-3 mb-8 animate-fade-in" style={{animationDelay:'0.2s', opacity:0, animationFillMode:'forwards'}}>
           <div className="w-12 h-px bg-cream/40" />
-          <span className="font-body text-cream/60 text-xs tracking-[0.35em] uppercase">Tebourba · Manouba · Tunisie</span>
+          <span className="font-body text-cream/60 text-xs tracking-[0.35em] uppercase">{t('hero.tagline')}</span>
           <div className="w-12 h-px bg-cream/40" />
         </div>
 
@@ -30,14 +34,14 @@ export default function Hero() {
           className="font-display italic text-xl md:text-2xl text-cream/75 mb-3 animate-fade-in"
           style={{animationDelay:'0.65s', opacity:0, animationFillMode:'forwards'}}
         >
-          Agriculture authentique en Tunisie
+          {t('hero.subtitle')}
         </p>
 
         <p
           className="font-body text-cream/55 text-sm tracking-[0.2em] uppercase mb-12 animate-fade-in"
           style={{animationDelay:'0.8s', opacity:0, animationFillMode:'forwards'}}
         >
-          Cultivation · Tradition · Terroir
+          {t('hero.cultivation')}
         </p>
 
         {/* CTAs */}
@@ -49,7 +53,7 @@ export default function Hero() {
             onClick={() => scrollTo('#contact')}
             className="btn-primary text-sm tracking-[0.15em] uppercase"
           >
-            <span>Nous contacter</span>
+            <span>{t('hero.cta_contact')}</span>
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
@@ -58,14 +62,14 @@ export default function Hero() {
             onClick={() => scrollTo('#productions')}
             className="font-body text-sm tracking-[0.15em] uppercase text-cream/70 hover:text-cream transition-colors duration-200 border-b border-cream/30 hover:border-cream/70 pb-0.5"
           >
-            Voir nos productions
+            {t('hero.cta_productions')}
           </button>
         </div>
       </div>
 
       {/* Scroll indicator */}
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-float">
-        <span className="font-body text-cream/40 text-xs tracking-[0.3em] uppercase">Défiler</span>
+        <span className="font-body text-cream/40 text-xs tracking-[0.3em] uppercase">{t('hero.scroll')}</span>
         <div className="w-px h-10 bg-gradient-to-b from-cream/40 to-transparent" />
       </div>
 

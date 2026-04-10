@@ -1,0 +1,148 @@
+{
+  "nav": {
+    "histoire": "Nuestra Historia",
+    "terre": "Nuestra Tierra",
+    "productions": "Producciones",
+    "vision": "Visión",
+    "contact": "Contacto",
+    "cta": "Contáctenos"
+  },
+  "hero": {
+    "tagline": "Tebourba · Manouba · Túnez",
+    "subtitle": "Agricultura auténtica en Túnez",
+    "cultivation": "Cultivo · Tradición · Terruño",
+    "cta_contact": "Contáctenos",
+    "cta_productions": "Ver nuestras producciones",
+    "scroll": "Desplazar"
+  },
+  "histoire": {
+    "section_label": "Nuestra Historia",
+    "title": "Un legado",
+    "title_italic": "cultivado con esmero",
+    "p1": "En el corazón de las tierras agrícolas de <strong>Chewigui-Tebourba en la gobernación de Manouba</strong>, la explotación <strong>Benayedos</strong> mantiene una relación antigua y respetuosa con la tierra.",
+    "p2": "Fundada por <strong>Brahim Ben Ayed (1884 – 1935)</strong>, la explotación fue posteriormente retomada por su hijo mayor <strong>Tahar Ben Ayed (1918 – 2010)</strong>, quien asumió la responsabilidad a la edad de 17 años. Desde <em>2010</em>, la explotación está dirigida por <strong>Hatem Ben Ayed</strong>, continuando así una tradición agrícola transmitida de generación en generación.",
+    "p3": "Nacida de una convicción simple, Benayedos produce una agricultura auténtica, arraigada en el ritmo de las estaciones y en el <strong>saber hacer agrícola tunecino</strong>. Situadas en el corazón de las llanuras cerealistas, sus tierras se benefician de un clima mediterráneo particularmente favorable para el cultivo de cereales y leguminosas.",
+    "p4": "Realizados mediante métodos que priorizan el <strong>cultivo de secano y la rotación de cultivos</strong>, nuestras producciones preservan la fertilidad del suelo y garantizan una agricultura sostenible, temporada tras temporada.",
+    "productions_label": "Nuestras producciones",
+    "quote": "Benayedos es una tierra de trabajo, paciencia y transmisión.",
+    "quote_author": "Familia Benayed",
+    "stat_generations": "Generaciones",
+    "stat_productions": "Producciones",
+    "stat_terroir": "Nuestro terruño"
+  },
+  "terre": {
+    "section_label": "Nuestra Tierra",
+    "title": "Un terruño excepcional",
+    "subtitle": "La región de Tebourba se beneficia de un microclima mediterráneo ideal, con suelos ricos que nutren naturalmente nuestros cultivos.",
+    "quote": "\"La tierra de Tebourba, nuestro orgullo.\"",
+    "localisation_label": "Localización",
+    "localisation_value": "Tebourba",
+    "localisation_detail": "Gobernación de Manouba",
+    "climat_label": "Clima",
+    "climat_value": "Mediterráneo",
+    "climat_detail": "Veranos calurosos · Inviernos suaves",
+    "sol_label": "Tipo de suelo",
+    "sol_value": "Arcillo-calcáreo",
+    "sol_detail": "Rico en minerales naturales",
+    "methode_label": "Método",
+    "methode_value": "Mixto",
+    "methode_detail": "Secano y regadío combinados"
+  },
+  "productions": {
+    "section_label": "Nuestras Producciones",
+    "title": "Lo que la tierra",
+    "title_italic": "nos ofrece",
+    "subtitle": "Cultivos inscritos en una lógica agrícola sostenible — rotación de cultivos, respeto de los ciclos naturales y adaptación a las características del suelo y del clima de Tebourba.",
+    "type_label": "Tipo",
+    "mode_label": "Método",
+    "semis_label": "Siembra",
+    "recolte_label": "Cosecha",
+    "variete_label": "Variedad",
+    "olive_oil": {
+      "name": "Aceite de oliva",
+      "desc": "Aceite de oliva producido a partir de un saber hacer agrícola tradicional. La recolección de las aceitunas se realiza para preservar la calidad del fruto.",
+      "type": "Olivicultura"
+    },
+    "ble": {
+      "name": "Trigo",
+      "desc": "El trigo constituye uno de los cultivos fundamentales de la explotación Benayedos. Adaptado a las condiciones climáticas de la región, se cultiva mediante prácticas agrícolas que favorecen la calidad del grano y la regularidad de los rendimientos.",
+      "type": "Cereal"
+    },
+    "feve": {
+      "name": "Habas",
+      "desc": "Las habas forman parte de los cultivos tradicionales de las tierras mediterráneas. Enriquecen naturalmente el suelo con nitrógeno y desempeñan un papel importante en la rotación agrícola.",
+      "type": "Leguminosa"
+    },
+    "feverole": {
+      "name": "Haba forrajera",
+      "desc": "La haba forrajera es una leguminosa particularmente adaptada a los sistemas agrícolas sostenibles. Mejora la fertilidad del suelo al mismo tiempo que produce una semilla rica en proteínas.",
+      "type": "Leguminosa"
+    },
+    "pois_chiche": {
+      "name": "Garbanzos",
+      "desc": "Cultivo emblemático de la agricultura mediterránea, el garbanzo ocupa un lugar importante en la rotación de cultivos de la explotación.",
+      "type": "Leguminosa"
+    },
+    "fenugrec": {
+      "name": "Fenogreco",
+      "desc": "El fenogreco es una planta con numerosas cualidades nutricionales y medicinales. Su cultivo forma parte de la tradición agrícola local.",
+      "type": "Aromática"
+    }
+  },
+  "vision": {
+    "section_label": "Visión y Compromiso",
+    "title": "Nuestros tres pilares",
+    "subtitle": "La explotación Benayedos se basa en una visión de agricultura <em>sostenible</em> fundada en tres principios esenciales:",
+    "pillar1_title": "Respeto por la tierra",
+    "pillar1_desc": "Preservar la fertilidad del suelo y mantener el equilibrio natural de los cultivos.",
+    "pillar2_title": "Calidad de las producciones",
+    "pillar2_desc": "Producir cultivos saludables adaptados al terruño y a las estaciones.",
+    "pillar3_title": "Transmisión del saber",
+    "pillar3_desc": "Mantener las prácticas agrícolas tradicionales integrando técnicas modernas cuando sea necesario.",
+    "quote": "\"Cultivar es creer en el mañana.\"",
+    "quote_author": "Filosofía Benayedos"
+  },
+  "contact": {
+    "section_label": "Contacto",
+    "title": "Hablemos de su",
+    "title_italic": "proyecto juntos",
+    "intro": "Ya sea profesional de la industria alimentaria, distribuidor o simplemente apasionado por la agricultura auténtica, estaremos encantados de ponernos en contacto con usted.",
+    "responsable_label": "Responsable",
+    "telephone_label": "Teléfono",
+    "email_label": "Email",
+    "localisation_label": "Ubicación",
+    "localisation_value": "Tebourba, Manouba — Túnez",
+    "map_city": "Tebourba, Manouba",
+    "map_region": "Norte de Túnez",
+    "form_name": "Nombre completo *",
+    "form_name_placeholder": "Su nombre",
+    "form_email": "Email *",
+    "form_email_placeholder": "su@email.com",
+    "form_phone": "Teléfono",
+    "form_phone_placeholder": "+216 XX XXX XXX",
+    "form_message": "Mensaje *",
+    "form_message_placeholder": "Describa su solicitud o interés...",
+    "form_submit": "Enviar mensaje",
+    "form_submitting": "Enviando...",
+    "success_title": "¡Mensaje enviado, {{name}}!",
+    "success_text": "Hemos recibido su mensaje y le responderemos en un plazo de 24 a 48 horas. Se le ha enviado un correo de confirmación.",
+    "success_reset": "Enviar otro mensaje",
+    "error_name": "El nombre debe tener al menos 2 caracteres.",
+    "error_email": "Email inválido.",
+    "error_message": "El mensaje debe tener al menos 10 caracteres.",
+    "error_server": "Se produjo un error. Por favor, inténtelo de nuevo o contáctenos directamente por teléfono."
+  },
+  "footer": {
+    "tagline": "Agricultura · Túnez",
+    "description": "Explotación agrícola familiar en Tebourba, cultivando con respeto y pasión desde generaciones.",
+    "productions_label": "Nuestras Producciones",
+    "contact_label": "Contacto",
+    "rights": "© {{year}} Benayedos. Todos los derechos reservados.",
+    "slogan": "Agricultura auténtica · Tebourba, Túnez"
+  },
+  "whatsapp": {
+    "message": "Hola, le contacto desde el sitio web de Benayedos. Me gustaría saber más sobre sus producciones.",
+    "tooltip": "Chat de WhatsApp"
+  },
+  "products_list": ["Trigo", "Habas", "Haba forrajera", "Garbanzos", "Heno", "Fenogreco", "Aceite de oliva"]
+}

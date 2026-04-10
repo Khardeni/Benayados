@@ -1,0 +1,148 @@
+{
+  "nav": {
+    "histoire": "Our Story",
+    "terre": "Our Land",
+    "productions": "Productions",
+    "vision": "Vision",
+    "contact": "Contact",
+    "cta": "Contact Us"
+  },
+  "hero": {
+    "tagline": "Tebourba · Manouba · Tunisia",
+    "subtitle": "Authentic Agriculture in Tunisia",
+    "cultivation": "Cultivation · Tradition · Terroir",
+    "cta_contact": "Contact Us",
+    "cta_productions": "View our productions",
+    "scroll": "Scroll"
+  },
+  "histoire": {
+    "section_label": "Our Story",
+    "title": "A Heritage",
+    "title_italic": "cultivated with care",
+    "p1": "At the heart of the agricultural lands of <strong>Chewigui-Tebourba in the governorate of Manouba</strong>, the <strong>Benayedos</strong> farm maintains a long-standing and respectful relationship with the land.",
+    "p2": "Founded by <strong>Brahim Ben Ayed (1884 – 1935)</strong>, the farm was later taken over by his eldest son <strong>Tahar Ben Ayed (1918 – 2010)</strong>, who assumed responsibility at the age of 17. Since <em>2010</em>, the farm has been managed by <strong>Hatem Ben Ayed</strong>, continuing an agricultural tradition passed down from generation to generation.",
+    "p3": "Born from a simple conviction, Benayedos produces authentic agriculture, rooted in the rhythm of the seasons and in <strong>Tunisian agricultural know-how</strong>. Located in the heart of cereal plains, its lands benefit from a Mediterranean climate particularly favorable to the cultivation of cereals and legumes.",
+    "p4": "Grown using methods that prioritize <strong>rain-fed farming and crop rotation</strong>, our productions preserve soil fertility and ensure sustainable agriculture, season after season.",
+    "productions_label": "Our productions",
+    "quote": "Benayedos is a land of work, patience, and transmission.",
+    "quote_author": "The Benayed Family",
+    "stat_generations": "Generations",
+    "stat_productions": "Productions",
+    "stat_terroir": "Our terroir"
+  },
+  "terre": {
+    "section_label": "Our Land",
+    "title": "An exceptional terroir",
+    "subtitle": "The Tebourba region benefits from an ideal Mediterranean microclimate, with rich soils that naturally nourish our crops.",
+    "quote": "\"The land of Tebourba, our pride.\"",
+    "localisation_label": "Location",
+    "localisation_value": "Tebourba",
+    "localisation_detail": "Governorate of Manouba",
+    "climat_label": "Climate",
+    "climat_value": "Mediterranean",
+    "climat_detail": "Hot summers · Mild winters",
+    "sol_label": "Soil type",
+    "sol_value": "Clay-limestone",
+    "sol_detail": "Rich in natural minerals",
+    "methode_label": "Method",
+    "methode_value": "Mixed",
+    "methode_detail": "Rain-fed & Irrigated combined"
+  },
+  "productions": {
+    "section_label": "Our Productions",
+    "title": "What the land",
+    "title_italic": "offers us",
+    "subtitle": "Crops embedded in a sustainable agricultural logic — crop rotation, respect for natural cycles and adaptation to the soil and climate characteristics of Tebourba.",
+    "type_label": "Type",
+    "mode_label": "Method",
+    "semis_label": "Sowing",
+    "recolte_label": "Harvest",
+    "variete_label": "Variety",
+    "olive_oil": {
+      "name": "Olive Oil",
+      "desc": "Olive oil produced from traditional agricultural know-how. The olive harvest is carried out in order to preserve the quality of the fruit.",
+      "type": "Olive Growing"
+    },
+    "ble": {
+      "name": "Wheat",
+      "desc": "Wheat is one of the fundamental crops of the Benayedos farm. Adapted to the region's climatic conditions, it is cultivated using agricultural practices that promote grain quality and consistent yields.",
+      "type": "Cereal"
+    },
+    "feve": {
+      "name": "Broad Beans",
+      "desc": "Broad beans are part of the traditional crops of Mediterranean lands. They naturally enrich the soil with nitrogen and play an important role in crop rotation.",
+      "type": "Legume"
+    },
+    "feverole": {
+      "name": "Faba Beans",
+      "desc": "Faba beans are a legume particularly suited to sustainable agricultural systems. They improve soil fertility while producing a protein-rich seed.",
+      "type": "Legume"
+    },
+    "pois_chiche": {
+      "name": "Chickpeas",
+      "desc": "An emblematic crop of Mediterranean agriculture, chickpeas occupy an important place in the farm's crop rotation system.",
+      "type": "Legume"
+    },
+    "fenugrec": {
+      "name": "Fenugreek",
+      "desc": "Fenugreek is a plant with numerous nutritional and medicinal properties. Its cultivation is rooted in local agricultural traditions.",
+      "type": "Aromatic"
+    }
+  },
+  "vision": {
+    "section_label": "Vision & Commitment",
+    "title": "Our three pillars",
+    "subtitle": "The Benayedos farm is built on a vision of <em>sustainable</em> agriculture based on three essential principles:",
+    "pillar1_title": "Respect for the land",
+    "pillar1_desc": "Preserving soil fertility and maintaining the natural balance of crops.",
+    "pillar2_title": "Quality production",
+    "pillar2_desc": "Producing healthy crops adapted to the terroir and the seasons.",
+    "pillar3_title": "Transmission of knowledge",
+    "pillar3_desc": "Maintaining traditional agricultural practices while integrating modern techniques when necessary.",
+    "quote": "\"To cultivate is to believe in tomorrow.\"",
+    "quote_author": "Benayedos Philosophy"
+  },
+  "contact": {
+    "section_label": "Contact",
+    "title": "Let's talk about your",
+    "title_italic": "project together",
+    "intro": "Whether you are a food industry professional, a distributor, or simply passionate about authentic agriculture, we would be delighted to connect with you.",
+    "responsable_label": "Manager",
+    "telephone_label": "Phone",
+    "email_label": "Email",
+    "localisation_label": "Location",
+    "localisation_value": "Tebourba, Manouba — Tunisia",
+    "map_city": "Tebourba, Manouba",
+    "map_region": "Northern Tunisia",
+    "form_name": "Full name *",
+    "form_name_placeholder": "Your name",
+    "form_email": "Email *",
+    "form_email_placeholder": "your@email.com",
+    "form_phone": "Phone",
+    "form_phone_placeholder": "+216 XX XXX XXX",
+    "form_message": "Message *",
+    "form_message_placeholder": "Describe your request or interest...",
+    "form_submit": "Send message",
+    "form_submitting": "Sending...",
+    "success_title": "Message sent, {{name}}!",
+    "success_text": "We have received your message and will get back to you within 24 to 48 hours. A confirmation email has been sent to you.",
+    "success_reset": "Send another message",
+    "error_name": "Name must be at least 2 characters.",
+    "error_email": "Invalid email.",
+    "error_message": "Message must be at least 10 characters.",
+    "error_server": "An error occurred. Please try again or contact us directly by phone."
+  },
+  "footer": {
+    "tagline": "Agriculture · Tunisia",
+    "description": "A family farm in Tebourba, cultivating with respect and passion for generations.",
+    "productions_label": "Our Productions",
+    "contact_label": "Contact",
+    "rights": "© {{year}} Benayedos. All rights reserved.",
+    "slogan": "Authentic agriculture · Tebourba, Tunisia"
+  },
+  "whatsapp": {
+    "message": "Hello, I'm contacting you from the Benayedos website. I'd like to learn more about your productions.",
+    "tooltip": "WhatsApp Chat"
+  },
+  "products_list": ["Wheat", "Broad Beans", "Faba Beans", "Chickpeas", "Hay", "Fenugreek", "Olive Oil"]
+}

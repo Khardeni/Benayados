@@ -1,4 +1,7 @@
+import { useTranslation } from 'react-i18next'
+
 export default function Footer() {
+  const { t } = useTranslation()
   const year = new Date().getFullYear()
 
   return (
@@ -9,20 +12,20 @@ export default function Footer() {
           <div>
             <h3 className="font-display text-2xl text-cream mb-2">Benayedos</h3>
             <p className="font-body text-xs tracking-[0.25em] uppercase text-olive-500 mb-4">
-              Agriculture · Tunisie
+              {t('footer.tagline')}
             </p>
             <p className="font-body text-sm font-300 leading-relaxed">
-              Exploitation agricole familiale à Tebourba, cultivant avec respect et passion depuis des générations.
+              {t('footer.description')}
             </p>
           </div>
 
           {/* Productions */}
           <div>
             <h4 className="font-body text-xs tracking-[0.25em] uppercase text-cream/40 mb-5">
-              Nos Productions
+              {t('footer.productions_label')}
             </h4>
             <ul className="space-y-2 font-body text-sm">
-              {['Blé', 'Fève', 'Féverole', 'Pois chiche', 'Foin', 'Fenugrec', "Huile d'olive"].map(p => (
+              {t('products_list', { returnObjects: true }).map(p => (
                 <li key={p} className="flex items-center gap-2 hover:text-cream transition-colors cursor-default">
                   <span className="w-1 h-1 bg-olive-600 rounded-full flex-shrink-0" />
                   {p}
@@ -34,7 +37,7 @@ export default function Footer() {
           {/* Contact */}
           <div>
             <h4 className="font-body text-xs tracking-[0.25em] uppercase text-cream/40 mb-5">
-              Contact
+              {t('footer.contact_label')}
             </h4>
             <div className="space-y-3 font-body text-sm">
               <p>Hatem Benayed</p>
@@ -52,10 +55,10 @@ export default function Footer() {
         {/* Divider */}
         <div className="border-t border-earth-700 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="font-body text-xs text-earth-600">
-            © {year} Benayedos. Tous droits réservés.
+            {t('footer.rights', { year })}
           </p>
           <p className="font-body text-xs text-earth-600 italic">
-            Agriculture authentique · Tebourba, Tunisie
+            {t('footer.slogan')}
           </p>
         </div>
       </div>

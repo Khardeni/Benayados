@@ -1,6 +1,9 @@
+import { useTranslation } from 'react-i18next'
+
 export default function WhatsAppButton() {
+  const { t } = useTranslation()
   const phone = '21699600520'
-  const message = encodeURIComponent("Bonjour, je vous contacte depuis le site Benayedos. J'aimerais en savoir plus sur vos productions.")
+  const message = encodeURIComponent(t('whatsapp.message'))
   const href = `https://wa.me/${phone}?text=${message}`
 
   return (
@@ -17,7 +20,7 @@ export default function WhatsAppButton() {
 
       {/* Tooltip */}
       <span className="absolute right-16 bg-earth-800 text-cream text-xs font-body px-3 py-1.5 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
-        Chat WhatsApp
+        {t('whatsapp.tooltip')}
         <span className="absolute top-1/2 -translate-y-1/2 -right-1 border-4 border-transparent border-l-earth-800" />
       </span>
     </a>

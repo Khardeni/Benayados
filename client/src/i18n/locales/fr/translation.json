@@ -1,0 +1,148 @@
+{
+  "nav": {
+    "histoire": "Notre Histoire",
+    "terre": "Notre Terre",
+    "productions": "Productions",
+    "vision": "Vision",
+    "contact": "Contact",
+    "cta": "Nous contacter"
+  },
+  "hero": {
+    "tagline": "Tebourba · Manouba · Tunisie",
+    "subtitle": "Agriculture authentique en Tunisie",
+    "cultivation": "Cultivation · Tradition · Terroir",
+    "cta_contact": "Nous contacter",
+    "cta_productions": "Voir nos productions",
+    "scroll": "Défiler"
+  },
+  "histoire": {
+    "section_label": "Notre Histoire",
+    "title": "Un héritage",
+    "title_italic": "cultivé avec soin",
+    "p1": "Au cœur des terres agricoles de <strong>Chewigui-Tebourba de la gouvernorat de Manouba</strong>, l'exploitation <strong>Benayedos</strong> perpétue une relation ancienne et respectueuse avec la terre.",
+    "p2": "Fondée par <strong>Brahim Ben Ayed (1884 – 1935)</strong>, l'exploitation a ensuite été reprise par son fils aîné <strong>Tahar Ben Ayed (1918 – 2010)</strong>, qui en a pris la responsabilité à l'âge de 17 ans. Depuis <em>2010</em>, l'exploitation est dirigée par <strong>Hatem Ben Ayed</strong>, poursuivant ainsi une tradition agricole transmise de génération en génération.",
+    "p3": "Née d'une conviction simple, Benayedos produit une agriculture authentique, enracinée dans le rythme des saisons et dans le <strong>savoir-faire agricole tunisien</strong>. Situées au cœur de plaines céréalières, ses terres bénéficient d'un climat méditerranéen particulièrement favorable à la culture des céréales et des légumineuses.",
+    "p4": "Conduites selon des méthodes privilégiant la <strong>culture pluviale et la rotation des cultures</strong>, nos productions préservent la fertilité des sols et garantissent une agriculture durable, saison après saison.",
+    "productions_label": "Nos productions",
+    "quote": "Benayedos, c'est une terre de travail, de patience et de transmission.",
+    "quote_author": "Famille Benayed",
+    "stat_generations": "Générations",
+    "stat_productions": "Productions",
+    "stat_terroir": "Notre terroir"
+  },
+  "terre": {
+    "section_label": "Notre Terre",
+    "title": "Un terroir d'exception",
+    "subtitle": "La région de Tebourba bénéficie d'un micro-climat méditerranéen idéal, avec des sols riches qui nourrissent naturellement nos cultures.",
+    "quote": "\"La terre de Tebourba, notre fierté.\"",
+    "localisation_label": "Localisation",
+    "localisation_value": "Tebourba",
+    "localisation_detail": "Gouvernorat de Manouba",
+    "climat_label": "Climat",
+    "climat_value": "Méditerranéen",
+    "climat_detail": "Étés chauds · Hivers doux",
+    "sol_label": "Type de sol",
+    "sol_value": "Argilo-calcaire",
+    "sol_detail": "Riche en minéraux naturels",
+    "methode_label": "Méthode",
+    "methode_value": "Mixte",
+    "methode_detail": "Pluvial & Irrigué combinés"
+  },
+  "productions": {
+    "section_label": "Nos Productions",
+    "title": "Ce que la terre",
+    "title_italic": "nous offre",
+    "subtitle": "Des cultures inscrites dans une logique agricole durable — rotation des cultures, respect des cycles naturels et adaptation aux caractéristiques du sol et du climat de Tebourba.",
+    "type_label": "Type",
+    "mode_label": "Mode",
+    "semis_label": "Semis",
+    "recolte_label": "Récolte",
+    "variete_label": "Variété",
+    "olive_oil": {
+      "name": "Huile d'olive",
+      "desc": "L'huile d'olive issue d'un savoir-faire agricole traditionnel. La récolte des olives est réalisée afin de préserver la qualité du fruit.",
+      "type": "Oléiculture"
+    },
+    "ble": {
+      "name": "Blé",
+      "desc": "Le blé constitue l'une des cultures fondamentales de l'exploitation Benayedos. Adapté aux conditions climatiques de la région, il est cultivé selon des pratiques agricoles qui favorisent la qualité du grain et la régularité des rendements.",
+      "type": "Céréale"
+    },
+    "feve": {
+      "name": "Fève",
+      "desc": "La fève fait partie des cultures traditionnelles des terres méditerranéennes. Elle enrichit naturellement le sol en azote et joue un rôle important dans la rotation agricole.",
+      "type": "Légumineuse"
+    },
+    "feverole": {
+      "name": "Féverole",
+      "desc": "La féverole est une légumineuse particulièrement adaptée aux systèmes agricoles durables. Elle améliore la fertilité des sols tout en produisant une graine riche en protéines.",
+      "type": "Légumineuse"
+    },
+    "pois_chiche": {
+      "name": "Pois chiche",
+      "desc": "Culture emblématique de l'agriculture méditerranéenne, le pois chiche occupe une place importante dans les rotations de cultures de l'exploitation.",
+      "type": "Légumineuse"
+    },
+    "fenugrec": {
+      "name": "Fenugrec",
+      "desc": "Le fenugrec est une plante aux nombreuses qualités nutritionnelles et médicinales. Sa culture s'inscrit dans la tradition agricole locale.",
+      "type": "Aromatique"
+    }
+  },
+  "vision": {
+    "section_label": "Vision & Engagement",
+    "title": "Nos trois piliers",
+    "subtitle": "L'exploitation Benayedos s'inscrit dans une vision d'agriculture <em>durable</em> fondée sur trois principes essentiels :",
+    "pillar1_title": "Respect de la terre",
+    "pillar1_desc": "Préserver la fertilité des sols et maintenir l'équilibre naturel des cultures.",
+    "pillar2_title": "Qualité des productions",
+    "pillar2_desc": "Produire des cultures saines adaptées au terroir et aux saisons.",
+    "pillar3_title": "Transmission du savoir",
+    "pillar3_desc": "Maintenir les pratiques agricoles traditionnelles tout en intégrant les techniques modernes lorsque cela est nécessaire.",
+    "quote": "\"Cultiver, c'est croire en demain.\"",
+    "quote_author": "Philosophie Benayedos"
+  },
+  "contact": {
+    "section_label": "Contact",
+    "title": "Parlons de votre",
+    "title_italic": "projet ensemble",
+    "intro": "Que vous soyez professionnel de l'agro-alimentaire, distributeur ou simplement passionné d'agriculture authentique, nous serions ravis d'échanger avec vous.",
+    "responsable_label": "Responsable",
+    "telephone_label": "Téléphone",
+    "email_label": "Email",
+    "localisation_label": "Localisation",
+    "localisation_value": "Tebourba, Manouba — Tunisie",
+    "map_city": "Tebourba, Manouba",
+    "map_region": "Tunisie du Nord",
+    "form_name": "Nom complet *",
+    "form_name_placeholder": "Votre nom",
+    "form_email": "Email *",
+    "form_email_placeholder": "votre@email.com",
+    "form_phone": "Téléphone",
+    "form_phone_placeholder": "+216 XX XXX XXX",
+    "form_message": "Message *",
+    "form_message_placeholder": "Décrivez votre demande ou votre intérêt...",
+    "form_submit": "Envoyer le message",
+    "form_submitting": "Envoi en cours...",
+    "success_title": "Message envoyé, {{name}} !",
+    "success_text": "Nous avons bien reçu votre message et vous répondrons sous 24 à 48 heures. Un email de confirmation vous a été envoyé.",
+    "success_reset": "Envoyer un autre message",
+    "error_name": "Le nom doit contenir au moins 2 caractères.",
+    "error_email": "Email invalide.",
+    "error_message": "Le message doit contenir au moins 10 caractères.",
+    "error_server": "Une erreur est survenue. Veuillez réessayer ou nous contacter directement par téléphone."
+  },
+  "footer": {
+    "tagline": "Agriculture · Tunisie",
+    "description": "Exploitation agricole familiale à Tebourba, cultivant avec respect et passion depuis des générations.",
+    "productions_label": "Nos Productions",
+    "contact_label": "Contact",
+    "rights": "© {{year}} Benayedos. Tous droits réservés.",
+    "slogan": "Agriculture authentique · Tebourba, Tunisie"
+  },
+  "whatsapp": {
+    "message": "Bonjour, je vous contacte depuis le site Benayedos. J'aimerais en savoir plus sur vos productions.",
+    "tooltip": "Chat WhatsApp"
+  },
+  "products_list": ["Blé", "Fève", "Féverole", "Pois chiche", "Foin", "Fenugrec", "Huile d'olive"]
+}
