@@ -2,7 +2,6 @@
   "version": 2,
   "buildCommand": "cd client && npm install && npm run build",
   "outputDirectory": "client/dist",
-  "installCommand": "npm install",
   "framework": null,
   "functions": {
     "api/contact.js": {
@@ -11,7 +10,6 @@
     }
   },
   "rewrites": [
-    { "source": "/api/contact", "destination": "/api/contact" },
-    { "source": "/(.*)",        "destination": "/index.html"  }
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
