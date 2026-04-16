@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next'
-
+import { IMAGES } from '../images'
 export default function Footer() {
   const { t } = useTranslation()
   const year = new Date().getFullYear()
@@ -10,7 +10,14 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           {/* Brand */}
           <div>
-            <h3 className="font-display text-2xl text-cream mb-2">Benayedos</h3>
+            <div className="flex items-center gap-3 mb-3">
+              <img
+                src={IMAGES.logo}
+                alt="Benayedos"
+                className="h-10 w-auto object-contain"
+              />
+              <h3 className="font-display text-2xl text-cream">Benayedos</h3>
+            </div>
             <p className="font-body text-xs tracking-[0.25em] uppercase text-olive-500 mb-4">
               {t('footer.tagline')}
             </p>
@@ -40,14 +47,15 @@ export default function Footer() {
               {t('footer.contact_label')}
             </h4>
             <div className="space-y-3 font-body text-sm">
-              <p>Hatem Benayed</p>
+              <p>{t('contact.responsable_value')}</p>
               <a href="tel:+21699600520" className="block hover:text-cream transition-colors">
-                +216 99 600 520
+                <span dir="ltr">{t('contact.telephone_value')}</span>
+
               </a>
               <a href="mailto:benayedos.sl@gmail.com" className="block hover:text-cream transition-colors break-all">
                 benayedos.sl@gmail.com
               </a>
-              <p>Tebourba, Manouba, Tunisie</p>
+              <p>{t('contact.map_city')}</p>
             </div>
           </div>
         </div>

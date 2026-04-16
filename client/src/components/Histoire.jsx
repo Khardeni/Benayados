@@ -1,10 +1,14 @@
 import { useTranslation, Trans } from 'react-i18next'
+import { IMAGES } from '../images'
 
 export default function Histoire() {
   const { t } = useTranslation()
 
   return (
-    <section id="histoire" className="py-24 md:py-36 olive-bg relative overflow-hidden">
+    <section id="histoire" className="py-24 md:py-36 olive-bg relative overflow-hidden"
+      style={{
+        backgroundImage: `linear-gradient(to right, rgba(249, 244, 234, 0.97) 0%, rgba(249, 244, 234, 0.85) 60%, rgba(249, 244, 234, 0.2) 100%), url(${IMAGES.products.huileOlive})`,
+      }}>
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="grid md:grid-cols-2 gap-16 items-center">
 
@@ -13,7 +17,7 @@ export default function Histoire() {
             <p className="section-subtitle reveal">{t('histoire.section_label')}</p>
             <div className="divider-ornament reveal reveal-delay-1">
               <svg className="w-5 h-5 text-earth-300" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2C8.5 2 6 5 6 8c0 5 6 14 6 14s6-9 6-14c0-3-2.5-6-6-6zm0 8a2 2 0 110-4 2 2 0 010 4z"/>
+                <path d="M12 2C8.5 2 6 5 6 8c0 5 6 14 6 14s6-9 6-14c0-3-2.5-6-6-6zm0 8a2 2 0 110-4 2 2 0 010 4z" />
               </svg>
             </div>
             <h2 className="section-title mb-8 reveal reveal-delay-1">
@@ -56,7 +60,7 @@ export default function Histoire() {
               {[
                 { value: '3+', label: t('histoire.stat_generations') },
                 { value: '6', label: t('histoire.stat_productions') },
-                { value: 'Tebourba', label: t('histoire.stat_terroir') },
+                { value: t('histoire.stat-label'), label: t('histoire.stat_terroir') },
               ].map(({ value, label }) => (
                 <div key={label} className="text-center">
                   <div className="font-display text-2xl md:text-3xl text-olive-700 font-600">{value}</div>
@@ -70,8 +74,10 @@ export default function Histoire() {
           <div className="relative reveal reveal-delay-2">
             <div className="relative z-10">
               <img
-                src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=700&q=80"
+                src={IMAGES.histoireMain}
                 alt="Champs agricoles de Tebourba"
+                loading="lazy"
+                decoding="async"
                 className="w-full aspect-[4/5] object-cover shadow-2xl"
               />
               {/* Floating accent card */}

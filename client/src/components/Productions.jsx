@@ -1,10 +1,11 @@
 import { useTranslation } from 'react-i18next'
+import { IMAGES } from '../images'
 
 const productionKeys = [
   {
     id: 'olive_oil',
     emoji: '🫒',
-    image: 'https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=400&q=80',
+    image: IMAGES.products.huileOlive,
     mode: '—',
     semis: null,
     recolte: '—',
@@ -13,7 +14,7 @@ const productionKeys = [
   {
     id: 'ble',
     emoji: '🌾',
-    image: 'https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=400&q=80',
+    image: IMAGES.products.ble,
     mode: 'Pluvial',
     semis: 'Novembre',
     recolte: '—',
@@ -22,7 +23,7 @@ const productionKeys = [
   {
     id: 'feve',
     emoji: '🫘',
-    image: 'https://images.unsplash.com/photo-1587735243615-c03f25aaff15?w=400&q=80',
+    image: IMAGES.products.feve,
     mode: 'Pluvial',
     semis: 'Novembre',
     recolte: 'Juin',
@@ -31,7 +32,7 @@ const productionKeys = [
   {
     id: 'feverole',
     emoji: '🌿',
-    image: 'https://images.unsplash.com/photo-1592457520501-9b3e6b0c3f80?w=400&q=80',
+    image: IMAGES.products.feverole,
     mode: 'Pluvial',
     semis: 'Octobre',
     recolte: '—',
@@ -40,7 +41,7 @@ const productionKeys = [
   {
     id: 'pois_chiche',
     emoji: '🌱',
-    image: 'https://images.unsplash.com/photo-1615485925763-86db7d87fcce?w=400&q=80',
+    image: IMAGES.products.poisChiche,
     mode: '—',
     semis: null,
     recolte: '—',
@@ -49,7 +50,7 @@ const productionKeys = [
   {
     id: 'fenugrec',
     emoji: '🌿',
-    image: 'https://images.unsplash.com/photo-1473649085228-583485e6e4d7?w=400&q=80',
+    image: IMAGES.products.fenugrec,
     mode: '—',
     semis: null,
     recolte: '—',
@@ -72,6 +73,8 @@ function ProductCard({ prodKey, emoji, image, mode, semis, recolte, variete, ind
         <img
           src={image}
           alt={name}
+          loading="lazy"
+          decoding="async"
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-earth-900/50 to-transparent" />
@@ -146,7 +149,7 @@ export default function Productions() {
               index={i}
             />
           ))}
-        
+
         </div>
       </div>
     </section>

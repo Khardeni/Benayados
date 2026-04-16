@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import LanguageSwitcher from './LanguageSwitcher'
+import { IMAGES } from '../images'
 
 export default function Navbar() {
   const { t, i18n } = useTranslation()
@@ -19,8 +20,19 @@ export default function Navbar() {
   ]
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 60)
-    window.addEventListener('scroll', handleScroll)
+    let ticking = false
+
+    const handleScroll = () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          setScrolled(window.scrollY > 60)
+          ticking = false
+        })
+        ticking = true
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
@@ -47,27 +59,32 @@ export default function Navbar() {
   return (
     <header
       dir={isRtl ? 'rtl' : 'ltr'}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled ? 'bg-cream/95 backdrop-blur-md shadow-sm border-b border-earth-100' : 'bg-transparent'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? 'bg-cream/95 backdrop-blur-md shadow-sm border-b border-earth-100' : 'bg-transparent'
+        }`}
     >
       <nav className="max-w-7xl mx-auto px-6 lg:px-12 h-16 md:h-20 flex items-center justify-between">
         {/* Logo */}
         <a
           href="#top"
           onClick={e => scrollTo(e, 'body')}
-          className="flex flex-col leading-none group"
+          className="flex items-center gap-2.5 group"
         >
-          <span className={`font-display text-xl font-600 tracking-wide transition-colors duration-300 ${
-            scrolled ? 'text-earth-800' : 'text-cream'
-          }`}>
-            Benayedos
-          </span>
-          <span className={`font-body text-[9px] tracking-[0.3em] uppercase transition-colors duration-300 ${
-            scrolled ? 'text-olive-600' : 'text-cream/70'
-          }`}>
-            {t('footer.tagline')}
-          </span>
+          <img
+            src={IMAGES.logo}
+            alt="Benayedos"
+            className={`h-8 w-auto object-contain transition-all duration-300 ${scrolled ? 'opacity-100' : 'opacity-90 brightness-0 invert'
+              }`}
+          />
+          <div className="flex flex-col leading-none">
+            <span className={`font-display text-xl font-600 tracking-wide transition-colors duration-300 ${scrolled ? 'text-earth-800' : 'text-cream'
+              }`}>
+              Benayedos
+            </span>
+            <span className={`font-body text-[9px] tracking-[0.3em] uppercase transition-colors duration-300 ${scrolled ? 'text-olive-600' : 'text-cream/70'
+              }`}>
+              {t('footer.tagline')}
+            </span>
+          </div>
         </a>
 
         {/* Desktop links */}
@@ -77,9 +94,8 @@ export default function Navbar() {
               <a
                 href={link.href}
                 onClick={e => scrollTo(e, link.href)}
-                className={`nav-link ${active === link.href ? 'nav-active' : ''} ${
-                  scrolled ? '' : 'text-cream/80 hover:text-cream'
-                }`}
+                className={`nav-link ${active === link.href ? 'nav-active' : ''} ${scrolled ? '' : 'text-cream/80 hover:text-cream'
+                  }`}
               >
                 {link.label}
               </a>
@@ -93,11 +109,10 @@ export default function Navbar() {
           <a
             href="#contact"
             onClick={e => scrollTo(e, '#contact')}
-            className={`inline-flex items-center gap-2 font-body text-sm tracking-wider px-5 py-2.5 border transition-all duration-300 ${
-              scrolled
-                ? 'border-olive-600 text-olive-700 hover:bg-olive-600 hover:text-cream'
-                : 'border-cream/60 text-cream hover:bg-cream/10'
-            }`}
+            className={`inline-flex items-center gap-2 font-body text-sm tracking-wider px-5 py-2.5 border transition-all duration-300 ${scrolled
+              ? 'border-olive-600 text-olive-700 hover:bg-olive-600 hover:text-cream'
+              : 'border-cream/60 text-cream hover:bg-cream/10'
+              }`}
           >
             {t('nav.cta')}
           </a>

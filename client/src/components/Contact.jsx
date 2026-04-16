@@ -95,7 +95,7 @@ export default function Contact() {
         </svg>
       ),
       label: t('contact.responsable_label'),
-      value: 'Hatem Benayed',
+      value: t('contact.responsable_value'),
     },
     {
       icon: (
@@ -104,7 +104,7 @@ export default function Contact() {
         </svg>
       ),
       label: t('contact.telephone_label'),
-      value: '+216 99 600 520',
+      value: <span dir="ltr">{t('contact.telephone_value')}</span>,
       href: 'tel:+21699600520',
     },
     {
@@ -174,7 +174,7 @@ export default function Contact() {
             <div className="mt-10 h-44 bg-earth-100 relative overflow-hidden">
               <img
                 src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=700&q=80"
-                alt="Tebourba, Manouba"
+                alt="Tebourba, Chwigi"
                 className="w-full h-full object-cover opacity-60"
               />
               <div className="absolute inset-0 flex items-center justify-center">

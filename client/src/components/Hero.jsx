@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next'
+import { IMAGES } from '../images'
 
 export default function Hero() {
   const { t } = useTranslation()
@@ -8,23 +9,42 @@ export default function Hero() {
   }
 
   return (
-    <section id="top" className="hero-bg relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Decorative grain overlay */}
+    <section
+      id="top"
+      className="hero-bg relative min-h-screen flex items-center justify-center overflow-hidden"
+      style={{
+        backgroundImage: `linear-gradient(to bottom, rgba(42, 38, 28, 0.55) 0%, rgba(42, 38, 28, 0.3) 50%, rgba(42, 38, 28, 0.7) 100%), url(${IMAGES.heroBg})`,
+      }}
+    >      {/* Decorative grain overlay */}
       <div className="absolute inset-0 grain-overlay" />
 
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         {/* Ornament */}
-        <div className="flex items-center justify-center gap-3 mb-8 animate-fade-in" style={{animationDelay:'0.2s', opacity:0, animationFillMode:'forwards'}}>
-          <div className="w-12 h-px bg-cream/40" />
-          <span className="font-body text-cream/60 text-xs tracking-[0.35em] uppercase">{t('hero.tagline')}</span>
-          <div className="w-12 h-px bg-cream/40" />
+        <div
+          className="flex flex-col items-center gap-4 mb-8 animate-fade-in"
+          style={{ animationDelay: '0.1s', opacity: 0, animationFillMode: 'forwards' }}
+        >
+          <img
+            src={IMAGES.logo}
+            srcSet={`${IMAGES.logoLg} 1x, ${IMAGES.logo2x} 2x`}
+            alt=""
+            aria-hidden="true"
+            className="h-40 w-auto object-contain "
+          />
+          <div className="flex items-center gap-3">
+            <div className="w-12 h-px bg-cream/40" />
+            <span className="font-body text-cream/60 text-xs tracking-[0.35em] uppercase">
+              {t('hero.tagline')}
+            </span>
+            <div className="w-12 h-px bg-cream/40" />
+          </div>
         </div>
 
         {/* Main title */}
         <h1
           className="font-display text-6xl md:text-8xl lg:text-9xl text-cream mb-4 leading-none tracking-tight animate-fade-in"
-          style={{animationDelay:'0.4s', opacity:0, animationFillMode:'forwards'}}
+          style={{ animationDelay: '0.4s', opacity: 0, animationFillMode: 'forwards' }}
         >
           Benayedos
         </h1>
@@ -32,14 +52,14 @@ export default function Hero() {
         {/* Subtitle */}
         <p
           className="font-display italic text-xl md:text-2xl text-cream/75 mb-3 animate-fade-in"
-          style={{animationDelay:'0.65s', opacity:0, animationFillMode:'forwards'}}
+          style={{ animationDelay: '0.65s', opacity: 0, animationFillMode: 'forwards' }}
         >
           {t('hero.subtitle')}
         </p>
 
         <p
           className="font-body text-cream/55 text-sm tracking-[0.2em] uppercase mb-12 animate-fade-in"
-          style={{animationDelay:'0.8s', opacity:0, animationFillMode:'forwards'}}
+          style={{ animationDelay: '0.8s', opacity: 0, animationFillMode: 'forwards' }}
         >
           {t('hero.cultivation')}
         </p>
@@ -47,7 +67,7 @@ export default function Hero() {
         {/* CTAs */}
         <div
           className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in"
-          style={{animationDelay:'1s', opacity:0, animationFillMode:'forwards'}}
+          style={{ animationDelay: '1s', opacity: 0, animationFillMode: 'forwards' }}
         >
           <button
             onClick={() => scrollTo('#contact')}

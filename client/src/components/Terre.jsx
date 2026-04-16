@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next'
+import { IMAGES } from '../images'
 
 export default function Terre() {
   const { t } = useTranslation();
@@ -91,15 +92,21 @@ export default function Terre() {
         {/* Wide image strip */}
         <div className="relative reveal reveal-delay-2">
           <img
-            src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1400&q=80"
+            src={IMAGES.terrePanorama}
             alt="Les terres de Tebourba"
+            loading="lazy"
+            decoding="async"
             className="w-full h-56 md:h-80 object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-cream/60 via-transparent to-cream/60" />
           <div className="absolute inset-0 flex items-center justify-center">
-            <p className="font-display italic text-2xl md:text-3xl text-earth-800/80">
-              {t('terre.quote')}           
-               </p>
+            <p className="font-display italic text-2xl md:text-3xl text-earth-800 px-6 py-3"
+              style={{
+                background: 'rgba(245, 240, 230, 0.72)',
+                backdropFilter: 'blur(2px)',
+                WebkitBackdropFilter: 'blur(2px)',
+              }}>
+              {t('terre.quote')}
+            </p>
           </div>
         </div>
       </div>

@@ -8,7 +8,7 @@
     "cta": "Nous contacter"
   },
   "hero": {
-    "tagline": "Tebourba · Manouba · Tunisie",
+    "tagline": "Chouigui-Tebourba · Manouba · Tunisie",
     "subtitle": "Agriculture authentique en Tunisie",
     "cultivation": "Cultivation · Tradition · Terroir",
     "cta_contact": "Nous contacter",
@@ -19,7 +19,7 @@
     "section_label": "Notre Histoire",
     "title": "Un héritage",
     "title_italic": "cultivé avec soin",
-    "p1": "Au cœur des terres agricoles de <strong>Chewigui-Tebourba de la gouvernorat de Manouba</strong>, l'exploitation <strong>Benayedos</strong> perpétue une relation ancienne et respectueuse avec la terre.",
+    "p1": "Au cœur des terres agricoles de <strong>Chouigui-Tebourba de la gouvernorat de Manouba</strong>, l'exploitation <strong>Benayedos</strong> perpétue une relation ancienne et respectueuse avec la terre.",
     "p2": "Fondée par <strong>Brahim Ben Ayed (1884 – 1935)</strong>, l'exploitation a ensuite été reprise par son fils aîné <strong>Tahar Ben Ayed (1918 – 2010)</strong>, qui en a pris la responsabilité à l'âge de 17 ans. Depuis <em>2010</em>, l'exploitation est dirigée par <strong>Hatem Ben Ayed</strong>, poursuivant ainsi une tradition agricole transmise de génération en génération.",
     "p3": "Née d'une conviction simple, Benayedos produit une agriculture authentique, enracinée dans le rythme des saisons et dans le <strong>savoir-faire agricole tunisien</strong>. Situées au cœur de plaines céréalières, ses terres bénéficient d'un climat méditerranéen particulièrement favorable à la culture des céréales et des légumineuses.",
     "p4": "Conduites selon des méthodes privilégiant la <strong>culture pluviale et la rotation des cultures</strong>, nos productions préservent la fertilité des sols et garantissent une agriculture durable, saison après saison.",
@@ -28,15 +28,16 @@
     "quote_author": "Famille Benayed",
     "stat_generations": "Générations",
     "stat_productions": "Productions",
-    "stat_terroir": "Notre terroir"
+    "stat_terroir": "Notre terroir",
+    "stat-label" : "Chouigui-Tebourba"
   },
   "terre": {
     "section_label": "Notre Terre",
     "title": "Un terroir d'exception",
-    "subtitle": "La région de Tebourba bénéficie d'un micro-climat méditerranéen idéal, avec des sols riches qui nourrissent naturellement nos cultures.",
-    "quote": "\"La terre de Tebourba, notre fierté.\"",
+    "subtitle": "La région de  Chouigui-Tebourba bénéficie d'un micro-climat méditerranéen idéal, avec des sols riches qui nourrissent naturellement nos cultures.",
+    "quote": "\"La terre de Chouigui-Tebourba, notre fierté.\"",
     "localisation_label": "Localisation",
-    "localisation_value": "Tebourba",
+    "localisation_value": "Chouigui-Tebourba",
     "localisation_detail": "Gouvernorat de Manouba",
     "climat_label": "Climat",
     "climat_value": "Méditerranéen",
@@ -52,7 +53,7 @@
     "section_label": "Nos Productions",
     "title": "Ce que la terre",
     "title_italic": "nous offre",
-    "subtitle": "Des cultures inscrites dans une logique agricole durable — rotation des cultures, respect des cycles naturels et adaptation aux caractéristiques du sol et du climat de Tebourba.",
+    "subtitle": "Des cultures inscrites dans une logique agricole durable — rotation des cultures, respect des cycles naturels et adaptation aux caractéristiques du sol et du climat de  Chouigui-Tebourba.",
     "type_label": "Type",
     "mode_label": "Mode",
     "semis_label": "Semis",
@@ -111,8 +112,8 @@
     "telephone_label": "Téléphone",
     "email_label": "Email",
     "localisation_label": "Localisation",
-    "localisation_value": "Tebourba, Manouba — Tunisie",
-    "map_city": "Tebourba, Manouba",
+    "localisation_value": "Chouigui-Tebourba, Manouba — Tunisie",
+    "map_city": "Chouigui-Tebourba, Manouba",
     "map_region": "Tunisie du Nord",
     "form_name": "Nom complet *",
     "form_name_placeholder": "Votre nom",
@@ -130,19 +131,21 @@
     "error_name": "Le nom doit contenir au moins 2 caractères.",
     "error_email": "Email invalide.",
     "error_message": "Le message doit contenir au moins 10 caractères.",
-    "error_server": "Une erreur est survenue. Veuillez réessayer ou nous contacter directement par téléphone."
+    "error_server": "Une erreur est survenue. Veuillez réessayer ou nous contacter directement par téléphone.",
+    "responsable_value": "Hatem Ben Ayed",
+    "telephone_value": "+216 99 600 520"
   },
   "footer": {
     "tagline": "Agriculture · Tunisie",
-    "description": "Exploitation agricole familiale à Tebourba, cultivant avec respect et passion depuis des générations.",
+    "description": "Exploitation agricole familiale à  Chouigui-Tebourba, cultivant avec respect et passion depuis des générations.",
     "productions_label": "Nos Productions",
     "contact_label": "Contact",
     "rights": "© {{year}} Benayedos. Tous droits réservés.",
-    "slogan": "Agriculture authentique · Tebourba, Tunisie"
+    "slogan": "Agriculture authentique · Chouigui-Tebourba, Tunisie"
   },
   "whatsapp": {
     "message": "Bonjour, je vous contacte depuis le site Benayedos. J'aimerais en savoir plus sur vos productions.",
     "tooltip": "Chat WhatsApp"
   },
-  "products_list": ["Blé", "Fève", "Féverole", "Pois chiche", "Foin", "Fenugrec", "Huile d'olive"]
+  "products_list": ["Blé", "Fève", "Féverole", "Pois chiche", "Fenugrec", "Huile d'olive"]
 }
