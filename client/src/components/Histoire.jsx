@@ -56,15 +56,15 @@ export default function Histoire() {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-6 mt-12 pt-10 border-t border-earth-200 reveal reveal-delay-5">
+            <div className="grid grid-cols-3 gap-3 md:gap-6 mt-12 pt-10 border-t border-earth-200 reveal reveal-delay-5">
               {[
                 { value: '3+', label: t('histoire.stat_generations') },
                 { value: '6', label: t('histoire.stat_productions') },
                 { value: t('histoire.stat-label'), label: t('histoire.stat_terroir') },
               ].map(({ value, label }) => (
                 <div key={label} className="text-center">
-                  <div className="font-display text-2xl md:text-3xl text-olive-700 font-600">{value}</div>
-                  <div className="font-body text-xs text-earth-400 tracking-[0.15em] uppercase mt-1">{label}</div>
+                  <div className="font-display text-xl md:text-3xl text-olive-700 font-600">{value}</div>
+                  <div className="font-body text-[9px] md:text-xs text-earth-400 tracking-[0.1em] md:tracking-[0.15em] uppercase mt-1 leading-tight">{label}</div>
                 </div>
               ))}
             </div>
@@ -81,7 +81,7 @@ export default function Histoire() {
                 className="w-full aspect-[4/5] object-cover shadow-2xl"
               />
               {/* Floating accent card */}
-              <div className="absolute -bottom-8 -left-8 bg-cream border border-earth-100 p-5 shadow-xl max-w-xs">
+              <div className="absolute -bottom-6 left-0 md:-bottom-8 md:-left-8 bg-cream border border-earth-100 p-4 md:p-5 shadow-xl max-w-[85%] md:max-w-xs">
                 <p className="font-display italic text-sm text-earth-600 leading-relaxed">
                   "{t('histoire.quote')}"
                 </p>

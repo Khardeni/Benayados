@@ -92,26 +92,26 @@ function ProductCard({ prodKey, emoji, image, mode, semis, recolte, variete, ind
         <p className="font-body text-sm text-earth-500 font-300 leading-relaxed mb-4">{desc}</p>
 
         {/* Details grid */}
-        <div className="flex gap-4 border-t border-earth-100 pt-3 mt-4">
+        <div className="grid grid-cols-2 gap-x-4 gap-y-2 border-t border-earth-100 pt-3 mt-4">
           {variete && variete !== '—' && (
-            <div className="flex items-center gap-2 text-xs font-body text-earth-400">
+            <div className="flex flex-col text-xs font-body">
               <span className="text-earth-300">{t('productions.variete_label')}</span>
-              <span className="ml-auto text-earth-600">{variete}</span>
+              <span className="text-earth-600 font-400 mt-0.5 truncate">{variete}</span>
             </div>
           )}
-          <div className="flex items-center gap-2 text-xs font-body text-earth-400">
+          <div className="flex flex-col text-xs font-body">
             <span className="text-earth-300">{t('productions.mode_label')}</span>
-            <span className="ml-auto text-earth-600">{mode}</span>
+            <span className="text-earth-600 font-400 mt-0.5">{mode}</span>
           </div>
           {semis && (
-            <div className="flex items-center gap-2 text-xs font-body text-earth-400">
+            <div className="flex flex-col text-xs font-body">
               <span className="text-earth-300">{t('productions.semis_label')}</span>
-              <span className="ml-auto text-earth-600">{semis}</span>
+              <span className="text-earth-600 font-400 mt-0.5">{semis}</span>
             </div>
           )}
-          <div className="flex items-center gap-2 text-xs font-body text-earth-400">
+          <div className="flex flex-col text-xs font-body">
             <span className="text-earth-300">{t('productions.recolte_label')}</span>
-            <span className="ml-auto text-earth-600">{recolte}</span>
+            <span className="text-earth-600 font-400 mt-0.5">{recolte}</span>
           </div>
         </div>
       </div>
