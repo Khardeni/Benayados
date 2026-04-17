@@ -221,7 +221,7 @@ app.get('/health', (req, res) => {
 })
 
 // POST /contact — Handle contact form submissions
-app.post('/contact', contactLimiter, async (req, res) => {
+app.post('/api/contact', contactLimiter, async (req, res) => {
   try {
     const { name, email, phone, message } = req.body
 
