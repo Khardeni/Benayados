@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Site vitrine Benayedos — Agriculture authentique en Tunisie",
   "private": true,
+  "dependencies": {
+    "nodemailer": "^6.9.14"
+  },
   "scripts": {
     "install:all": "npm install && cd client && npm install && cd ../server && npm install",
     "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm run dev\"",
