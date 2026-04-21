@@ -17,7 +17,7 @@
   },
   "histoire": {
     "section_label": "Nuestra Historia",
-    "title": "Un legado",
+    "title": "Un legado",    
     "title_italic": "cultivado con esmero",
     "p1": "En el corazón de las tierras agrícolas de <strong>Chouigui-Tebourba en la gobernación de Manouba</strong>, la explotación <strong>Benayedos</strong> mantiene una relación antigua y respetuosa con la tierra.",
     "p2": "Fundada por <strong>Brahim Ben Ayed (1884 – 1935)</strong>, la explotación fue posteriormente retomada por su hijo mayor <strong>Tahar Ben Ayed (1918 – 2010)</strong>, quien asumió la responsabilidad a la edad de 17 años. Desde <em>2010</em>, la explotación está dirigida por <strong>Hatem Ben Ayed</strong>, continuando así una tradición agrícola transmitida de generación en generación.",
@@ -25,7 +25,7 @@
     "p4": "Realizados mediante métodos que priorizan el <strong>cultivo de secano y la rotación de cultivos</strong>, nuestras producciones preservan la fertilidad del suelo y garantizan una agricultura sostenible, temporada tras temporada.",
     "productions_label": "Nuestras producciones",
     "quote": "Benayedos es una tierra de trabajo, paciencia y transmisión.",
-    "quote_author": "Familia Ben ayed",
+    "quote_author": "Familia Ben Ayed",
     "stat_generations": "Generaciones",
     "stat_productions": "Producciones",
     "stat_terroir": "Nuestro terruño"
@@ -107,7 +107,7 @@
     "title": "Hablemos de su",
     "title_italic": "proyecto juntos",
     "intro": "Ya sea profesional de la industria alimentaria, distribuidor o simplemente apasionado por la agricultura auténtica, estaremos encantados de ponernos en contacto con usted.",
-    "responsable_label": "Responsable",
+    "responsable_label": "Directivo Ejecutivo",
     "telephone_label": "Teléfono",
     "email_label": "Email",
     "localisation_label": "Ubicación",
